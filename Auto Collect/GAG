@@ -1,0 +1,39 @@
+    task.spawn(function()
+        while getgenv().AutoCollect do task.wait()
+            pcall(function()
+                if #lp.Backpack:GetChildren() >= 200 then return end
+                local targets = {}
+
+                for _, plot in ipairs(workspace.Farm:GetChildren()) do
+                    local data = plot
+                    for _, part in ipairs({"Important", "Data"}) do
+                        data = data and data:FindFirstChild(part)
+                    end
+                    
+                    local owner = data and data:FindFirstChild("Owner")
+                    if owner and owner.Value == lp.Name then
+                        local plants = plot:FindFirstChild("Important") and plot.Important:FindFirstChild("Plants_Physical")
+                        if plants then
+                            for _, v in ipairs(plants:GetDescendants()) do
+                                if v:IsA("ProximityPrompt") and game:GetService("CollectionService"):HasTag(v, "CollectPrompt") and not v:GetAttribute("Collected") then
+                                    v:SetAttribute("Collected", true)
+                                    task.delay(5, function()
+                                        if v then v:SetAttribute("Collected", nil) end
+                                    end)
+                                    local tags = v.Parent and v.Parent.Parent
+                                    if tags then
+                                        table.insert(targets, tags)
+                                    end
+                                end
+                            end
+                        end
+                    end
+                end
+                if #targets > 0 then
+                    require(game:GetService("ReplicatedStorage").Modules.Remotes).Crops.Collect.send(targets)
+                    task.wait()
+                end
+            end)
+            task.wait(1)
+        end
+    end)
