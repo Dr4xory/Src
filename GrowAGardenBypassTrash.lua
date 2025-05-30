@@ -1133,9 +1133,9 @@ end
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 
 local Window = Rayfield:CreateWindow({
-   Name = "Grow a Garden | PolleserHub",
+   Name = "Grow a Garden | BabyZeed Ood Som Hub Hub",
    Icon = 0,
-   LoadingTitle = "Grow a Garden | PolleserHub",
+   LoadingTitle = "Grow a Garden | BabyZeed Ood Som Hub",
    LoadingSubtitle = "bypass by Draxory",
    Theme = "Ocean",
 
