@@ -1,6 +1,7 @@
 -- สคิปควายๆโดนกูบายพาสก็อปมาทั้งสคิปไอเอ๋อ สคิปโง่ๆ
-
-setclipboard("script By Rungjarean Jumpasan")
+print("สคิปควายๆโดนกูบายพาสก็อปมาทั้งสคิปไอเอ๋อ สคิปโง่ๆ")
+print("Noob Script Bro Shit GPT Cap")
+setclipboard("Rungjarean On Top No1 :FIRE:FIRE:FIRE:FIRE:FIRE:FIRE:FIRE:FIRE:FIRE:FIRE:FIRE:FIRE:FIRE:FIRE:FIRE:FIRE:FIRE:FIRE:FIRE:FIRE:FIRE:FIRE:FIRE:FIRE:FIRE:FIRE:FIRE:FIRE:FIRE:FIRE:FIRE:FIRE:FIRE:FIRE:FIRE:FIRE:FIRE:FIRE:FIRE:FIRE:FIRE:FIRE:FIRE:FIRE:FIRE:FIRE:FIRE:FIRE")
 -- Services
 local Players = game:GetService("Players")
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
@@ -1135,7 +1136,7 @@ local Window = Rayfield:CreateWindow({
    Name = "Grow a Garden | PolleserHub",
    Icon = 0,
    LoadingTitle = "Grow a Garden | PolleserHub",
-   LoadingSubtitle = "by Polleser",
+   LoadingSubtitle = "bypass by Draxory",
    Theme = "Ocean",
 
    DisableRayfieldPrompts = false,
@@ -1162,7 +1163,7 @@ local Window = Rayfield:CreateWindow({
    SaveKey = true,
    GrabKeyFromSite = false,
    Key = {
-      "Bypass v4",
+      "Rungjarean On Top No1 :FIRE:FIRE:FIRE:FIRE:FIRE:FIRE:FIRE:FIRE:FIRE:FIRE:FIRE:FIRE:FIRE:FIRE:FIRE:FIRE:FIRE:FIRE:FIRE:FIRE:FIRE:FIRE:FIRE:FIRE:FIRE:FIRE:FIRE:FIRE:FIRE:FIRE:FIRE:FIRE:FIRE:FIRE:FIRE:FIRE:FIRE:FIRE:FIRE:FIRE:FIRE:FIRE:FIRE:FIRE:FIRE:FIRE:FIRE:FIRE",
    }
 }
 })
